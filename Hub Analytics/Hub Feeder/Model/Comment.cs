@@ -16,7 +16,7 @@ namespace Hub_Feeder.Model
         public static Comment GetRandomSentence()
         {
 
-            Random rand = new Random();
+            Random rand = new Random(); 
             WordGenerator generator = new WordGenerator();
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < rand.Next(5,20); i++)
