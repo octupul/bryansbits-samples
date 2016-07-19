@@ -9,6 +9,8 @@ namespace Hub_Feeder.Model
 {
     public class Comment
     {
+        private static string[] users = { "george", "martin", "jeev", "paul", "jd", "dereck", "kay", "bryan", "ryan", "darrel", "divia", "bernard", "jorel" };
+
         public string Text { get; set; }
         public DateTime TimeStamp { get; set; }
         public int LengthOfConversation { get; set; }
@@ -32,6 +34,7 @@ namespace Hub_Feeder.Model
             newComment.Text = sb.ToString() ;
             newComment.TimeStamp = DateTime.Now;
             newComment.LengthOfConversation = rand.Next(500, 1500) * newComment.Text.Split(' ').Length;
+            newComment.User = users[rand.Next(0, users.Length - 1)];
             return newComment;
         }
     }

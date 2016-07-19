@@ -139,15 +139,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Access\AirportAccess.cs" />
     <Compile Include="Access\EvenHubAccess.cs" />
     <Compile Include="Access\HubSettings.cs" />
     <Compile Include="Access\IOTHubAccess.cs" />
+    <Compile Include="Model\Airport.cs" />
     <Compile Include="Model\AirportMonitor.cs" />
     <Compile Include="Model\Comment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="airports.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="settings.json">

@@ -1,4 +1,4 @@
 ﻿{
-  "EventHubConnectionString": "",
-  "IOTConnectionString": ""
+  "EventHubConnectionString": "{your event hub connection string}",
+  "IOTConnectionString": "{your iot hub connection string}"
 }
